@@ -6,6 +6,8 @@ target 'AttestationCovid' do
   use_frameworks!
 
   # Pods for AttestationCovid
+  pod 'Localize-Swift'
+
   pod 'RxCocoa'
   pod 'RxSwift'
 
