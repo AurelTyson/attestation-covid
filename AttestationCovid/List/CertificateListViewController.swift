@@ -26,7 +26,7 @@ final class CertificateListViewController: UITableViewController {
     
     private let disposeBag = DisposeBag()
     
-    // MARK: Viewcontroller lifecycle
+    // MARK: ViewController lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,18 @@ final class CertificateListViewController: UITableViewController {
     
     private func load(completion: () -> Void) {
         if let documentDirectory = documentDirectory,
-           let files = try? FileManager.default.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil, options: []) {
+           var files = try? FileManager.default.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil, options: []) {
+            
+            // Sort by date, show newest on top of the list
+            try? files.sort { (leftUrl: URL, rightUrl: URL) -> Bool in
+                
+                let leftAttributes = try FileManager.default.attributesOfItem(atPath: leftUrl.path)
+                let rightAttributes = try FileManager.default.attributesOfItem(atPath: rightUrl.path)
+                
+                return (leftAttributes[.creationDate] as? Date ?? Date()) > (rightAttributes[.creationDate] as? Date ?? Date())
+                
+            }
+            
             self.certificates = files
             completion()
         }
