@@ -6,6 +6,7 @@
 //  Copyright © 2020 David Yang. All rights reserved.
 //
 
+import Localize_Swift
 import UIKit
 
 @UIApplicationMain

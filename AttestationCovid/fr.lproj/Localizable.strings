@@ -34,3 +34,5 @@
 "certificates.deleteall.alert.message" = "Supprimer l'ensemble des certificats ?";
 "certificates.deleteall.alert.cancel" = "Annuler";
 "certificates.deleteall.alert.delete" = "Supprimer";
+
+"certificates.row.generatedAt" = "Générée %@";

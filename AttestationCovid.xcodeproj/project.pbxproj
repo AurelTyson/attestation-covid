@@ -30,9 +30,11 @@
 		6392B99924422EE00077D83F /* CertificateDocumentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99824422EE00077D83F /* CertificateDocumentBuilder.swift */; };
 		6392B99B244245D60077D83F /* CertificateQRCodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99A244245D60077D83F /* CertificateQRCodeBuilder.swift */; };
 		6392B99E24425AFB0077D83F /* CertificateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99D24425AFB0077D83F /* CertificateListViewController.swift */; };
-		6392B9A124425D5A0077D83F /* FileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B9A024425D5A0077D83F /* FileCell.swift */; };
 		63DF0A762441E4B600E17515 /* KeyValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF0A752441E4B600E17515 /* KeyValueCell.swift */; };
 		63DF0A782441E4D200E17515 /* CheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF0A772441E4D200E17515 /* CheckCell.swift */; };
+		7497A4AF254CB516004FC087 /* CertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */; };
+		7497A4B0254CB516004FC087 /* CertificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */; };
+		7497A4B4254CB579004FC087 /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A4B3254CB579004FC087 /* NibIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +75,11 @@
 		6392B99824422EE00077D83F /* CertificateDocumentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateDocumentBuilder.swift; sourceTree = "<group>"; };
 		6392B99A244245D60077D83F /* CertificateQRCodeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateQRCodeBuilder.swift; sourceTree = "<group>"; };
 		6392B99D24425AFB0077D83F /* CertificateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListViewController.swift; sourceTree = "<group>"; };
-		6392B9A024425D5A0077D83F /* FileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCell.swift; sourceTree = "<group>"; };
 		63DF0A752441E4B600E17515 /* KeyValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueCell.swift; sourceTree = "<group>"; };
 		63DF0A772441E4D200E17515 /* CheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCell.swift; sourceTree = "<group>"; };
+		7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTableViewCell.swift; sourceTree = "<group>"; };
+		7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateTableViewCell.xib; sourceTree = "<group>"; };
+		7497A4B3254CB579004FC087 /* NibIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
 		820D89D2281A11B7B87DC34D /* Pods-AttestationCovidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestationCovidTests.release.xcconfig"; path = "Target Support Files/Pods-AttestationCovidTests/Pods-AttestationCovidTests.release.xcconfig"; sourceTree = "<group>"; };
 		9593A32E192B9743E935C4F5 /* Pods_AttestationCovidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestationCovidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3E14ACA84C94AB9FA57980 /* Pods_AttestationCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestationCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +164,7 @@
 				639053FC24464F9900DCB451 /* DateUtils.swift */,
 				6392B991244229430077D83F /* UIViewControllerUtils.swift */,
 				639053F72442698900DCB451 /* CertificatePreferences.swift */,
+				7497A4B3254CB579004FC087 /* NibIdentifiable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -202,7 +207,8 @@
 		6392B99F24425D510077D83F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6392B9A024425D5A0077D83F /* FileCell.swift */,
+				7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */,
+				7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63067B932441E10A00B8B6C5 /* LaunchScreen.storyboard in Resources */,
+				7497A4B0254CB516004FC087 /* CertificateTableViewCell.xib in Resources */,
 				6392B98224421F6D0077D83F /* Localizable.strings in Resources */,
 				63067B902441E10A00B8B6C5 /* Assets.xcassets in Resources */,
 				6392B99724422CDC0077D83F /* certificate.pdf in Resources */,
@@ -418,7 +425,6 @@
 				6392B99524422BDE0077D83F /* CertificateViewController.swift in Sources */,
 				6392B992244229430077D83F /* UIViewControllerUtils.swift in Sources */,
 				63067B8B2441E10800B8B6C5 /* FormViewController.swift in Sources */,
-				6392B9A124425D5A0077D83F /* FileCell.swift in Sources */,
 				6392B99B244245D60077D83F /* CertificateQRCodeBuilder.swift in Sources */,
 				6392B990244226490077D83F /* DateFormatterUtils.swift in Sources */,
 				6392B98B244222220077D83F /* FormViewModels.swift in Sources */,
@@ -429,8 +435,10 @@
 				6392B98E2442224A0077D83F /* Certificate.swift in Sources */,
 				63067B892441E10800B8B6C5 /* SceneDelegate.swift in Sources */,
 				639053FD24464F9900DCB451 /* DateUtils.swift in Sources */,
+				7497A4AF254CB516004FC087 /* CertificateTableViewCell.swift in Sources */,
 				639053F82442698900DCB451 /* CertificatePreferences.swift in Sources */,
 				633C3CE22442081600ECFC19 /* CheckButton.swift in Sources */,
+				7497A4B4254CB579004FC087 /* NibIdentifiable.swift in Sources */,
 				6392B99924422EE00077D83F /* CertificateDocumentBuilder.swift in Sources */,
 				63DF0A762441E4B600E17515 /* KeyValueCell.swift in Sources */,
 			);
