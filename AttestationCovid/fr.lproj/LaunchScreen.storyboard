@@ -20,24 +20,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-kt-fbR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRg-Kk-9Gn">
-                                <rect key="frame" x="77" y="391" width="260" height="114.5"/>
-                                <string key="text">Attestation
-Covid</string>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="44"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR Code" translatesAutoresizingMaskIntoConstraints="NO" id="OEt-JT-jFP">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1rd-Ai-Nxs"/>
+                                    <constraint firstAttribute="width" secondItem="OEt-JT-jFP" secondAttribute="height" multiplier="1:1" id="i0C-lF-jIi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hhB-kt-fbR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2hq-Ik-qE8"/>
-                            <constraint firstItem="bRg-Kk-9Gn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="63p-mw-YmS"/>
                             <constraint firstItem="hhB-kt-fbR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ain-Bq-bUB"/>
                             <constraint firstAttribute="bottom" secondItem="hhB-kt-fbR" secondAttribute="bottom" id="C58-M5-ooe"/>
+                            <constraint firstItem="OEt-JT-jFP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LIh-Qh-Tug"/>
+                            <constraint firstItem="OEt-JT-jFP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ogo-38-94r"/>
                             <constraint firstItem="hhB-kt-fbR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sk9-eo-qgv"/>
-                            <constraint firstItem="bRg-Kk-9Gn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="d31-rN-61p"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +47,7 @@ Covid</string>
     </scenes>
     <resources>
         <image name="LaunchScreen" width="1024" height="1024"/>
+        <image name="QR Code" width="670" height="670"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
