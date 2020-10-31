@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064CC0751C1005E70F22944D /* Pods_AttestationCovidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9593A32E192B9743E935C4F5 /* Pods_AttestationCovidTests.framework */; };
+		114C708B241D53F770FFE0F9 /* Pods_AttestationCovid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3E14ACA84C94AB9FA57980 /* Pods_AttestationCovid.framework */; };
 		63067B872441E10800B8B6C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63067B862441E10800B8B6C5 /* AppDelegate.swift */; };
 		63067B892441E10800B8B6C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63067B882441E10800B8B6C5 /* SceneDelegate.swift */; };
 		63067B8B2441E10800B8B6C5 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63067B8A2441E10800B8B6C5 /* FormViewController.swift */; };
@@ -28,9 +30,11 @@
 		6392B99924422EE00077D83F /* CertificateDocumentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99824422EE00077D83F /* CertificateDocumentBuilder.swift */; };
 		6392B99B244245D60077D83F /* CertificateQRCodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99A244245D60077D83F /* CertificateQRCodeBuilder.swift */; };
 		6392B99E24425AFB0077D83F /* CertificateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B99D24425AFB0077D83F /* CertificateListViewController.swift */; };
-		6392B9A124425D5A0077D83F /* FileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B9A024425D5A0077D83F /* FileCell.swift */; };
 		63DF0A762441E4B600E17515 /* KeyValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF0A752441E4B600E17515 /* KeyValueCell.swift */; };
 		63DF0A782441E4D200E17515 /* CheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF0A772441E4D200E17515 /* CheckCell.swift */; };
+		7497A4AF254CB516004FC087 /* CertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */; };
+		7497A4B0254CB516004FC087 /* CertificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */; };
+		7497A4B4254CB579004FC087 /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A4B3254CB579004FC087 /* NibIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000BCFBF604F18856FE4B356 /* Pods-AttestationCovid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestationCovid.release.xcconfig"; path = "Target Support Files/Pods-AttestationCovid/Pods-AttestationCovid.release.xcconfig"; sourceTree = "<group>"; };
+		2FBBC31074B4697C0E5713BC /* Pods-AttestationCovidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestationCovidTests.debug.xcconfig"; path = "Target Support Files/Pods-AttestationCovidTests/Pods-AttestationCovidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63067B832441E10800B8B6C5 /* Covid Attestation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid Attestation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63067B862441E10800B8B6C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63067B882441E10800B8B6C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +75,15 @@
 		6392B99824422EE00077D83F /* CertificateDocumentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateDocumentBuilder.swift; sourceTree = "<group>"; };
 		6392B99A244245D60077D83F /* CertificateQRCodeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateQRCodeBuilder.swift; sourceTree = "<group>"; };
 		6392B99D24425AFB0077D83F /* CertificateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListViewController.swift; sourceTree = "<group>"; };
-		6392B9A024425D5A0077D83F /* FileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCell.swift; sourceTree = "<group>"; };
 		63DF0A752441E4B600E17515 /* KeyValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueCell.swift; sourceTree = "<group>"; };
 		63DF0A772441E4D200E17515 /* CheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCell.swift; sourceTree = "<group>"; };
+		7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTableViewCell.swift; sourceTree = "<group>"; };
+		7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateTableViewCell.xib; sourceTree = "<group>"; };
+		7497A4B3254CB579004FC087 /* NibIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
+		820D89D2281A11B7B87DC34D /* Pods-AttestationCovidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestationCovidTests.release.xcconfig"; path = "Target Support Files/Pods-AttestationCovidTests/Pods-AttestationCovidTests.release.xcconfig"; sourceTree = "<group>"; };
+		9593A32E192B9743E935C4F5 /* Pods_AttestationCovidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestationCovidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3E14ACA84C94AB9FA57980 /* Pods_AttestationCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestationCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54A67A960B0D1737A65C79D /* Pods-AttestationCovid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestationCovid.debug.xcconfig"; path = "Target Support Files/Pods-AttestationCovid/Pods-AttestationCovid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114C708B241D53F770FFE0F9 /* Pods_AttestationCovid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064CC0751C1005E70F22944D /* Pods_AttestationCovidTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +112,8 @@
 				63067B852441E10800B8B6C5 /* AttestationCovid */,
 				63067B9C2441E10A00B8B6C5 /* AttestationCovidTests */,
 				63067B842441E10800B8B6C5 /* Products */,
+				86D13AEEE1717558F8683452 /* Pods */,
+				861541F634D2D9B1787B0218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +164,7 @@
 				639053FC24464F9900DCB451 /* DateUtils.swift */,
 				6392B991244229430077D83F /* UIViewControllerUtils.swift */,
 				639053F72442698900DCB451 /* CertificatePreferences.swift */,
+				7497A4B3254CB579004FC087 /* NibIdentifiable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -190,7 +207,8 @@
 		6392B99F24425D510077D83F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6392B9A024425D5A0077D83F /* FileCell.swift */,
+				7497A4AD254CB516004FC087 /* CertificateTableViewCell.swift */,
+				7497A4AE254CB516004FC087 /* CertificateTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -214,6 +232,26 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		861541F634D2D9B1787B0218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E14ACA84C94AB9FA57980 /* Pods_AttestationCovid.framework */,
+				9593A32E192B9743E935C4F5 /* Pods_AttestationCovidTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86D13AEEE1717558F8683452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B54A67A960B0D1737A65C79D /* Pods-AttestationCovid.debug.xcconfig */,
+				000BCFBF604F18856FE4B356 /* Pods-AttestationCovid.release.xcconfig */,
+				2FBBC31074B4697C0E5713BC /* Pods-AttestationCovidTests.debug.xcconfig */,
+				820D89D2281A11B7B87DC34D /* Pods-AttestationCovidTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63067BA22441E10A00B8B6C5 /* Build configuration list for PBXNativeTarget "AttestationCovid" */;
 			buildPhases = (
+				B1F82669A80F6355D255C1B3 /* [CP] Check Pods Manifest.lock */,
 				63067B7F2441E10800B8B6C5 /* Sources */,
 				63067B802441E10800B8B6C5 /* Frameworks */,
 				63067B812441E10800B8B6C5 /* Resources */,
+				C7AF3166FD922400B197835E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63067BA52441E10A00B8B6C5 /* Build configuration list for PBXNativeTarget "AttestationCovidTests" */;
 			buildPhases = (
+				9564FC620B5B6242D9B59A74 /* [CP] Check Pods Manifest.lock */,
 				63067B952441E10A00B8B6C5 /* Sources */,
 				63067B962441E10A00B8B6C5 /* Frameworks */,
 				63067B972441E10A00B8B6C5 /* Resources */,
@@ -295,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63067B932441E10A00B8B6C5 /* LaunchScreen.storyboard in Resources */,
+				7497A4B0254CB516004FC087 /* CertificateTableViewCell.xib in Resources */,
 				6392B98224421F6D0077D83F /* Localizable.strings in Resources */,
 				63067B902441E10A00B8B6C5 /* Assets.xcassets in Resources */,
 				6392B99724422CDC0077D83F /* certificate.pdf in Resources */,
@@ -311,6 +353,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9564FC620B5B6242D9B59A74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttestationCovidTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F82669A80F6355D255C1B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttestationCovid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AF3166FD922400B197835E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttestationCovid/Pods-AttestationCovid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttestationCovid/Pods-AttestationCovid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AttestationCovid/Pods-AttestationCovid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63067B7F2441E10800B8B6C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,7 +425,6 @@
 				6392B99524422BDE0077D83F /* CertificateViewController.swift in Sources */,
 				6392B992244229430077D83F /* UIViewControllerUtils.swift in Sources */,
 				63067B8B2441E10800B8B6C5 /* FormViewController.swift in Sources */,
-				6392B9A124425D5A0077D83F /* FileCell.swift in Sources */,
 				6392B99B244245D60077D83F /* CertificateQRCodeBuilder.swift in Sources */,
 				6392B990244226490077D83F /* DateFormatterUtils.swift in Sources */,
 				6392B98B244222220077D83F /* FormViewModels.swift in Sources */,
@@ -330,8 +435,10 @@
 				6392B98E2442224A0077D83F /* Certificate.swift in Sources */,
 				63067B892441E10800B8B6C5 /* SceneDelegate.swift in Sources */,
 				639053FD24464F9900DCB451 /* DateUtils.swift in Sources */,
+				7497A4AF254CB516004FC087 /* CertificateTableViewCell.swift in Sources */,
 				639053F82442698900DCB451 /* CertificatePreferences.swift in Sources */,
 				633C3CE22442081600ECFC19 /* CheckButton.swift in Sources */,
+				7497A4B4254CB579004FC087 /* NibIdentifiable.swift in Sources */,
 				6392B99924422EE00077D83F /* CertificateDocumentBuilder.swift in Sources */,
 				63DF0A762441E4B600E17515 /* KeyValueCell.swift in Sources */,
 			);
@@ -501,12 +608,13 @@
 		};
 		63067BA32441E10A00B8B6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54A67A960B0D1737A65C79D /* Pods-AttestationCovid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = H3J4BA637A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AttestationCovid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,7 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.y4ng.AttestationCovid;
 				PRODUCT_NAME = "Covid Attestation";
-				PROVISIONING_PROFILE_SPECIFIER = "Development Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -522,12 +630,13 @@
 		};
 		63067BA42441E10A00B8B6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000BCFBF604F18856FE4B356 /* Pods-AttestationCovid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = H3J4BA637A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AttestationCovid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -535,7 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.y4ng.AttestationCovid;
 				PRODUCT_NAME = "Covid Attestation";
-				PROVISIONING_PROFILE_SPECIFIER = AttestationCovid_AppStore;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -543,11 +652,13 @@
 		};
 		63067BA62441E10A00B8B6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBBC31074B4697C0E5713BC /* Pods-AttestationCovidTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3J4BA637A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AttestationCovidTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,11 +676,13 @@
 		};
 		63067BA72441E10A00B8B6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820D89D2281A11B7B87DC34D /* Pods-AttestationCovidTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3J4BA637A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AttestationCovidTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

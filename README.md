@@ -8,8 +8,20 @@ Il s'agit d'une version mobile iOS du générateur original mis à disposition p
 
 ## Auteur
 
-David Yang
+[David Yang](https://github.com/davidy4ng)
 
 ## Contributeurs
 
-Razvan Bunea
+- [Razvan Bunea](https://github.com/razvn)
+- [Aurel Tyson](https://github.com/AurelTyson)
+
+## Ressources
+
+- Icone : 
+  - https://www.flaticon.com/free-icon/qr-code_3465156
+
+- Gradient :
+  - #C6FFDD
+  - #FBD786
+  - #f7797d
+  - https://uigradients.com/#MegaTron
