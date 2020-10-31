@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,9 +33,15 @@
             <objects>
                 <navigationController id="Jy4-x2-6Hr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Générer" image="plus.rectangle.fill.on.rectangle.fill" catalog="system" id="ev0-JP-gC9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mj5-9u-WKB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Mj5-9u-WKB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="oQ5-4J-kVp" kind="relationship" relationship="rootViewController" id="A4d-f3-x5M"/>
@@ -44,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="-591" y="223"/>
         </scene>
-        <!--Saisissez les informations-->
+        <!--Informations-->
         <scene sceneID="4oA-yF-Pxz">
             <objects>
                 <tableViewController storyboardIdentifier="FormViewController" id="oQ5-4J-kVp" customClass="FormViewController" customModule="Covid_Attestation" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,17 +60,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="P9s-yS-WHr">
-                            <rect key="frame" x="0.0" y="167" width="414" height="76"/>
+                            <rect key="frame" x="0.0" y="163.5" width="414" height="76"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-l1-eUV">
                                     <rect key="frame" x="16" y="16" width="382" height="44"/>
-                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <color key="backgroundColor" name="Gradient green"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="FPu-FK-krg"/>
                                     </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                     <state key="normal" title="Générer l'attestation">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
                                         <action selector="generateAttestation:" destination="oQ5-4J-kVp" eventType="touchUpInside" id="XOd-Pw-Zhc"/>
@@ -80,21 +88,21 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KeyValueCellIdentifier" id="aLd-X3-aMY" customClass="KeyValueCell" customModule="Covid_Attestation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aLd-X3-aMY" id="JYk-cN-cAq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Value" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-mI-3wK">
-                                            <rect key="frame" x="356" y="0.0" width="42" height="43.5"/>
+                                            <rect key="frame" x="359.5" y="0.0" width="38.5" height="42"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC0-Ev-DYl">
-                                            <rect key="frame" x="16" y="11" width="45" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="16" y="11" width="42" height="20"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -115,10 +123,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckCellIdentifier" id="P7u-9w-v3c" customClass="CheckCell" customModule="Covid_Attestation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="71.5" width="414" height="67.5"/>
+                                <rect key="frame" x="0.0" y="70" width="414" height="65.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P7u-9w-v3c" id="kJF-tC-dJk">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWN-CV-0OV" customClass="CheckButton" customModule="Covid_Attestation" customModuleProvider="target">
@@ -131,10 +139,10 @@
                                             <state key="selected" image="checkmark.circle.fill" catalog="system"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-wv-vH4">
-                                            <rect key="frame" x="54" y="15" width="352" height="41.5"/>
+                                            <rect key="frame" x="54" y="15" width="352" height="39.5"/>
                                             <string key="text">Label
 lakdsjlfkd</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -161,7 +169,7 @@ lakdsjlfkd</string>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Générer" id="uQH-EQ-ko4"/>
-                    <navigationItem key="navigationItem" title="Saisissez les informations" id="uBs-NQ-t2z"/>
+                    <navigationItem key="navigationItem" title="Informations" id="uBs-NQ-t2z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSf-RX-cpO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,9 +180,15 @@ lakdsjlfkd</string>
             <objects>
                 <navigationController id="M4d-HI-t6O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mes attestations" image="list.dash" catalog="system" id="c9z-yv-ey2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="igw-od-OdV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="igw-od-OdV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Mbc-RY-Xt0" kind="relationship" relationship="rootViewController" id="MAD-Lh-Ugu"/>
@@ -184,7 +198,7 @@ lakdsjlfkd</string>
             </objects>
             <point key="canvasLocation" x="-590" y="-453"/>
         </scene>
-        <!--Liste des attestations-->
+        <!--Attestations-->
         <scene sceneID="pV6-L3-30e">
             <objects>
                 <tableViewController id="Mbc-RY-Xt0" customClass="CertificateListViewController" customModule="Covid_Attestation" customModuleProvider="target" sceneMemberID="viewController">
@@ -198,7 +212,7 @@ lakdsjlfkd</string>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Mes attestations" id="Ce2-1U-2Dc"/>
-                    <navigationItem key="navigationItem" title="Liste des attestations" id="cmN-HB-yXG">
+                    <navigationItem key="navigationItem" title="Attestations" id="cmN-HB-yXG">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="trash" catalog="system" id="bPf-FP-ok8"/>
                     </navigationItem>
                     <connections>
@@ -232,9 +246,15 @@ lakdsjlfkd</string>
             <objects>
                 <navigationController id="epy-V5-6r6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="À propos" image="questionmark.circle" catalog="system" id="1JA-eL-3Q1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BdC-gJ-GqL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BdC-gJ-GqL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="t9E-rU-8Wj" kind="relationship" relationship="rootViewController" id="vUM-jL-TU5"/>
@@ -245,6 +265,11 @@ lakdsjlfkd</string>
             <point key="canvasLocation" x="-591" y="901"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gWN-CV-0OV">
+            <size key="intrinsicContentSize" width="20" height="22"/>
+        </designable>
+    </designables>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="circle" catalog="system" width="128" height="121"/>
@@ -252,11 +277,11 @@ lakdsjlfkd</string>
         <image name="plus.rectangle.fill.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="Gradient green">
+            <color red="0.77647058823529413" green="1" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
