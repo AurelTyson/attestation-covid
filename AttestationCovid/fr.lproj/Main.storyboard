@@ -34,8 +34,14 @@
                 <navigationController id="Jy4-x2-6Hr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Générer" image="plus.rectangle.fill.on.rectangle.fill" catalog="system" id="ev0-JP-gC9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Mj5-9u-WKB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="oQ5-4J-kVp" kind="relationship" relationship="rootViewController" id="A4d-f3-x5M"/>
@@ -175,8 +181,14 @@ lakdsjlfkd</string>
                 <navigationController id="M4d-HI-t6O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mes attestations" image="list.dash" catalog="system" id="c9z-yv-ey2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="igw-od-OdV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Mbc-RY-Xt0" kind="relationship" relationship="rootViewController" id="MAD-Lh-Ugu"/>
@@ -235,8 +247,14 @@ lakdsjlfkd</string>
                 <navigationController id="epy-V5-6r6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="À propos" image="questionmark.circle" catalog="system" id="1JA-eL-3Q1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BdC-gJ-GqL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="101.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="t9E-rU-8Wj" kind="relationship" relationship="rootViewController" id="vUM-jL-TU5"/>
@@ -247,6 +265,11 @@ lakdsjlfkd</string>
             <point key="canvasLocation" x="-591" y="901"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gWN-CV-0OV">
+            <size key="intrinsicContentSize" width="20" height="22"/>
+        </designable>
+    </designables>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="circle" catalog="system" width="128" height="121"/>
